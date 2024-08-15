@@ -21,7 +21,7 @@ const Login = () => {
     return (
         <div >
             <Helmet>
-                <title>CraftedEcoChic | Login</title>
+                <title>ShopEase | Login</title>
             </Helmet>
             <div data-aos-easing="zoom-in-up" data-aos-duration='1000' className="loginDiv">
                 <div className="w-full max-w-md mb-20 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800 shadow-xl mx-auto mt-20 lg:8 justify-center items-center">

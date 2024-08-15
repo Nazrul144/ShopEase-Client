@@ -1,5 +1,5 @@
 
-import { FaEye, FaEyeSlash, FaImages,  FaUserEdit } from 'react-icons/fa';
+import { FaImages,  FaUserEdit } from 'react-icons/fa';
 import { IoEyeSharp, IoKey, IoMail } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { HiMiniEyeSlash } from 'react-icons/hi2';
+import 'animate.css';
 
 const Register = () => {
 
@@ -23,7 +24,7 @@ const Register = () => {
     return (
         <div>
            <Helmet>
-                <title>CraftedEcoChic | Register</title>
+                <title>ShopEase | Register</title>
             </Helmet>
             <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800 mt-44 mb-20 lg:mt-8 mx-auto shadow-xl">
                 <div className='text-center'>

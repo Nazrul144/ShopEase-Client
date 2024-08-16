@@ -16,7 +16,7 @@ const ViewDetails = () => {
                     </div>
                     <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                         <li className="text-xl"><span className='text-green-500 font-bold'>Product Name:</span> {productName}</li>
-                        <li className="text-xl"><span className='text-green-500 font-bold'>Price:</span> ${price} </li>
+                        <li className="text-xl"><span className='text-green-500 font-bold'>Price:</span> $ {price} </li>
                         <li className="text-xl"><span className='text-green-500 font-bold'>Category: </span> {category}</li>
                         <li className="text-xl"><span className='text-green-500 font-bold'>Description: </span>{description}</li>
                         <li className="text-xl"><span className='text-green-500 font-bold'>Creation Date & Time:</span> {productCreationDateTime} </li>

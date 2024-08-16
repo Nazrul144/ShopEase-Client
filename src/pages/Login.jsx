@@ -1,7 +1,7 @@
 
 import Swal from 'sweetalert2'
 import { IoEyeSharp, IoKey, IoMail } from 'react-icons/io5';
-import { Link } from 'react-router-dom';
+import { Link , useLocation, useNavigate} from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter'
 
 import { Helmet } from "react-helmet-async";
@@ -16,6 +16,9 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
 
     const {login} = useContext(AuthContext)
+    const location = useLocation()
+    const navigate = useNavigate()
+    console.log(location);
     //Google login:
     const auth = getAuth(app);
     const googleProvider = new GoogleAuthProvider();
@@ -43,6 +46,9 @@ const Login = () => {
                 text: "You clicked the button!",
                 icon: "success"
               });
+              
+              //Navigate after login:
+            navigate(location?.state ? location.state : '/')
             
         })
         .catch(error => {

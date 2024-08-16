@@ -11,6 +11,7 @@ import ErrorPage from "../pages/ErrorPage";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import ViewDetails from "../pages/ViewDetails";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
   export const router = createBrowserRouter([
@@ -30,7 +31,7 @@ import ViewDetails from "../pages/ViewDetails";
         },
         {
           path:'/viewDetails/:id',
-          element: <ViewDetails></ViewDetails>,
+          element:  <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
           loader: ({params}) => fetch(`http://localhost:5000/mobiles/${params.id}`)
         },
        

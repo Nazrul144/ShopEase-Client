@@ -5,6 +5,7 @@ import { AuthContext } from '../provider/AuthProvider';
 const Navbar = () => {
     const navItems = <>
         <li className='text-2xl font-bold font-Lato'><NavLink to='/' className={({isActive})=> isActive ? "text-green-500" : ""}>Home</NavLink></li>
+        <li className='text-2xl font-bold font-Lato'><NavLink to='/products' className={({isActive})=> isActive ? "text-green-500" : ""}>All Products</NavLink></li>
         <li className='text-2xl font-bold font-Lato'><NavLink to='/login' className={({isActive})=> isActive ? "text-green-500" : ""}>Login</NavLink></li>
         <li className='text-2xl font-bold font-Lato'><NavLink to='/register' className={({isActive})=> isActive ? "text-green-500" : ""}>Register</NavLink></li>
     </>

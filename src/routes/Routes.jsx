@@ -6,6 +6,7 @@ import Root from "../root/Root";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Products from "../pages/Products";
 
 
   export const router = createBrowserRouter([
@@ -17,6 +18,11 @@ import Register from "../pages/Register";
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+          path: '/products',
+          element: <Products></Products>,
+          loader: ()=> fetch('http://localhost:5000/mobileCount')
         },
         {
             path: '/login',

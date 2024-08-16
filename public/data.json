@@ -1,0 +1,364 @@
+[
+    {
+      "productName": "Samsung Galaxy Z Fold6 Ultra",
+      "productImage": "https://i.ibb.co/vx0bS6J/image-1000x1200-2.png",
+      "description": "Glass front (Gorilla Glass Victus 2) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame  with Exynos 2100, 8GB RAM, and 128GB storage.",
+      "price": 1366.21,
+      "category": "Samsung",
+      "ratings": 4.5,
+      "productCreationDateTime": "2023-08-10T14:32:00Z"
+    },
+    {
+      "productName": "Samsung Galaxy A06",
+      "productImage": "https://i.ibb.co/gyHKKs9/Samsung-Galaxy-A06-Blue.webp",
+      "description": "Samsung Galaxy A06 with A15 Bionic chip, 6.1-inch display, and 128GB storage.",
+      "price": 937.68,
+      "category": "Samsung",
+      "ratings": 4.7,
+      "productCreationDateTime": "2023-08-11T09:45:00Z"
+    },
+    {
+      "productName": "Samsung Galaxy M35",
+      "productImage": "https://i.ibb.co/fQRm3XZ/image-1000x1200.png",
+      "description": "Samsung Galaxy M35 with Google Tensor, 8GB RAM, and 128GB storage.",
+      "price": 594.01,
+      "category": "Samsung",
+      "ratings": 4.6,
+      "productCreationDateTime": "2023-08-12T10:30:00Z"
+    },
+    {
+      "productName": "Samsung Galaxy Z Flip6",
+      "productImage": "https://i.ibb.co/cksYWDG/image-1000x1200-1.png",
+      "description": "Plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame smartphone with Snapdragon 888, 12GB RAM, and 256GB storage.",
+      "price": 1272.88,
+      "category": "Samsung",
+      "ratings": 4.5,
+      "productCreationDateTime": "2023-08-13T11:15:00Z"
+    },
+    {
+      "productName": "Samsung Galaxy C55",
+      "productImage": "https://i.ibb.co/1qzBs6f/image-1000x1200-3.png",
+      "description": "6.7 inches, 108.4 cm2 (~86.4% screen-to-body ratio) with Snapdragon 888, 8GB RAM, and 128GB storage.",
+      "price": 749,
+      "category": "Samsung",
+      "ratings": 4.4,
+      "productCreationDateTime": "2023-08-14T08:50:00Z"
+    },
+    {
+      "productName": "Samsung Galaxy S24 Ultra",
+      "productImage": "https://i.ibb.co/C6R3CzS/image-1000x1200-4.png",
+      "description": "Compact smartphone with Snapdragon 865, 8GB RAM, and 128GB storage.",
+      "price": 799,
+      "category": "Samsung",
+      "ratings": 4.3,
+      "productCreationDateTime": "2023-08-15T07:20:00Z"
+    },
+    {
+      "productName": "Samsung Galaxy Xcover7",
+      "productImage": "https://i.ibb.co/mzb3Z2P/image-1000x1200-5.pngg",
+      "description": "Samsung Galaxy flagship with Snapdragon 888, 12GB RAM, and 256GB storage.",
+      "price": 899,
+      "category": "Samsung",
+      "ratings": 4.6,
+      "productCreationDateTime": "2023-08-16T13:00:00Z"
+    },
+    {
+      "productName": "Samsung Galaxy A15",
+      "productImage": "https://i.ibb.co/J3KpT6m/Samsung-Galaxy-A15.webp",
+      "description": "Samsung Galaxy smartphone with Snapdragon 870, 12GB RAM, and 256GB storage.",
+      "price": 799,
+      "category": "Samsung",
+      "ratings": 4.5,
+      "productCreationDateTime": "2023-08-17T12:40:00Z"
+    },
+    
+    {
+      "productName": "Oppo A3x 4G",
+      "productImage": "https://i.ibb.co/F0N2zVW/image-1000x1200-6.png",
+      "description": "Affordable flagship with Snapdragon 888, 8GB RAM, and 128GB storage.",
+      "price": 499,
+      "category": "Oppo",
+      "ratings": 4.4,
+      "productCreationDateTime": "2023-08-18T11:30:00Z"
+    },
+    {
+      "productName": "Oppo K12x",
+      "productImage": "https://i.ibb.co/CbMzwW9/Oppo-K12x-Global-Breeze-Blue-300x300.webp",
+      "description": "High-end smartphone with Kirin 9000, 8GB RAM, and 256GB storage.",
+      "price": 169.72,
+      "category": "Oppo",
+      "ratings": 4.3,
+      "productCreationDateTime": "2023-08-19T10:10:00Z"
+    },
+    {
+      "productName": "Oppo Reno12 F",
+      "productImage": "https://i.ibb.co/DDVM83H/Oppo-Reno12-F-Amber-Orange.webp",
+      "description": "5G smartphone with Snapdragon 765G, 8GB RAM, and 128GB storage.",
+      "price": 296.92,
+      "category": "Oppo",
+      "ratings": 4.2,
+      "productCreationDateTime": "2023-08-20T09:05:00Z"
+    },
+    {
+      "productName": "Oppo Reno12",
+      "productImage": "https://i.ibb.co/Gt5SV4z/image-1000x1200-7.png",
+      "description": "Gaming smartphone with Snapdragon 888, 16GB RAM, and 256GB storage.",
+      "price": 509.07,
+      "category": "Oppo",
+      "ratings": 4.8,
+      "productCreationDateTime": "2023-08-21T08:20:00Z"
+    },
+    {
+      "productName": "Oppo A3 Pro",
+      "productImage": "https://i.ibb.co/D94vVdC/image-1000x1200-8.png",
+      "description": "Oppo A3 Pro smartphone with Snapdragon 870, 12GB RAM, and 256GB storage.",
+      "price": 297.00,
+      "category": "Oppo",
+      "ratings": 4.3,
+      "productCreationDateTime": "2023-08-22T11:50:00Z"
+    },
+    {
+      "productName": "Oppo Find X7 Ultra",
+      "productImage": "https://i.ibb.co/vZdKr0P/image-1000x1200-9.png",
+      "description": "Gaming smartphone with Snapdragon 888, 12GB RAM, and 256GB storage.",
+      "price": 1145.59,
+      "category": "Oppo",
+      "ratings": 4.7,
+      "productCreationDateTime": "2023-08-23T10:40:00Z"
+    },
+    {
+      "productName": "Nokia 105 2022",
+      "productImage": "https://i.ibb.co/SfXLQkh/image-1000x1200-10.png",
+      "description": "The Nokia 105 (2022) is a simple, durable phone with a 1.77-inch display, long battery life, FM radio, and supports basic calling and SMS.",
+      "price": 21.21,
+      "category": "Nokia",
+      "ratings": 4.4,
+      "productCreationDateTime": "2023-08-24T09:25:00Z"
+    },
+    {
+      "productName": "NOKIA 3310",
+      "productImage": "https://i.ibb.co/9rtsWSs/image-1000x1200-11.png",
+      "description": "The Nokia 3310 is a durable phone with a 2.4-inch display, 2MP camera, long battery life, 2G support, and classic features like FM radio and Snake.",
+      "price": 53.46,
+      "category": "Nokia",
+      "ratings": 4.3,
+      "productCreationDateTime": "2023-08-25T12:15:00Z"
+    },
+    {
+      "productName": "NOKIA 2660 Flip",
+      "productImage": "https://i.ibb.co/tQmsGFK/image-1000x1200-12.png",
+      "description": "The Nokia 2660 Flip is a compact, easy-to-use flip phone with a 2.8-inch display, 0.3MP camera, large buttons, long battery life, and features like FM radio and 4G support.",
+      "price": 61.95,
+      "category": "Nokia",
+      "ratings": 4.2,
+      "productCreationDateTime": "2023-08-26T11:00:00Z"
+    },
+    {
+      "productName": "Nokia 5310",
+      "productImage": "https://i.ibb.co/5GpJMnC/image-1000x1200-13.png",
+      "description": "The Nokia 5310 is a durable feature phone with a 2.4-inch display, 2MP camera, dedicated music buttons, FM radio, and long battery life.",
+      "price": 52.61,
+      "category": "Nokia",
+      "ratings": 4.1,
+      "productCreationDateTime": "2023-08-27T10:20:00Z"
+    },
+    {
+      "productName": "Nokia 8.3 5G",
+      "productImage": "https://i.ibb.co/m6rRJCR/image-1000x1200-14.png",
+      "description": "The Nokia 8.3 5G has a 6.81-inch display, Snapdragon 765G, 64MP quad-camera, 5G support, and a 4,500mAh battery.",
+      "price": 509.15,
+      "category": "Nokia",
+      "ratings": 4.8,
+      "productCreationDateTime": "2023-08-28T09:30:00Z"
+    },
+    {
+      "productName": "Nokia 9 PureView",
+      "productImage": "https://i.ibb.co/Y0WZ6Kj/image-1000x1200-15.png",
+      "description": "The Nokia 9 PureView features a 5.99-inch display, Snapdragon 845, and a unique penta-camera system with five 12MP sensors.",
+      "price": 509.07,
+      "category": "Nokia",
+      "ratings": 4.2,
+      "productCreationDateTime": "2023-08-29T08:50:00Z"
+    },
+    {
+      "productName": "Nokia 7.2",
+      "productImage": "https://i.ibb.co/6WFd4GF/image-1000x1200-16.png",
+      "description": "The Nokia 7.2 has a 6.3-inch display, Snapdragon 660, and a triple-camera system with a 48MP main sensor.",
+      "price": 271.46,
+      "category": "Nokia",
+      "ratings": 4.1,
+      "productCreationDateTime": "2023-08-30T11:30:00Z"
+    },
+    {
+      "productName": "Nokia 6.1 Plus",
+      "productImage": "https://i.ibb.co/TMstL2Z/image-1000x1200-17.png",
+      "description": "The Nokia 6.1 Plus features a 5.8-inch display, Snapdragon 636, dual-camera setup, and a sleek design.",
+      "price": 237.52,
+      "category": "Nokia",
+      "ratings": 4.3,
+      "productCreationDateTime": "2023-08-31T10:10:00Z"
+    },
+    {
+      "productName": "iPhone 11",
+      "productImage": "https://i.ibb.co/GTJWpbq/image-1000x1200-22.png",
+      "description": "The iPhone 11 has a 6.1-inch display, dual 12MP rear cameras, A13 Bionic chip, and is known for its reliable performance and good battery life.",
+      "price": 424.29,
+      "category": "Apple",
+      "ratings": 4.4,
+      "productCreationDateTime": "2023-09-01T09:00:00Z"
+    },
+    {
+      "productName": "iPhone 14 Pro Max",
+      "productImage": "https://i.ibb.co/8zQxwQr/image-1000x1200-19.png",
+      "description": "The iPhone 14 Pro Max features a 6.7-inch Super Retina XDR display, A16 Bionic chip, triple 48MP rear cameras, and advanced features like ProMotion and improved battery life.",
+      "price": 1196.50,
+      "category": "Apple",
+      "ratings": 4.2,
+      "productCreationDateTime": "2023-09-02T13:10:00Z"
+    },
+    {
+      "productName": "iPhone 15 Pro — Official",
+      "productImage": "https://i.ibb.co/0Yq8tm5/image-1000x1200-31.png",
+      "description": "The iPhone 15 Pro features a 6.1-inch Super Retina XDR display, A17 Pro chip, titanium frame, triple-camera system, 8GB RAM, and storage options of 128GB, 256GB, 512GB, or 1TB.",
+      "price": 1485.02,
+      "category": "Apple",
+      "ratings": 4.3,
+      "productCreationDateTime": "2023-09-03T12:40:00Z"
+    },
+    {
+      "productName": "iPhone 15 Pro Max",
+      "productImage": "https://i.ibb.co/xFsxMqB/image-1000x1200-20.png",
+      "description": "The iPhone 15 Pro Max has a 6.7-inch Super Retina XDR display, A17 Pro chip, titanium frame, a triple-camera system, 8GB RAM, and storage options of 256GB, 512GB, or 1TB.",
+      "price": 1230.45,
+      "category": "Apple",
+      "ratings": 4.6,
+      "productCreationDateTime": "2023-09-04T11:20:00Z"
+    },
+    {
+      "productName": "iPhone 15 Plus",
+      "productImage": "https://i.ibb.co/sRyB3VD/image-1000x1200-21.png",
+      "description": "The iPhone 15 Plus features a 6.7-inch Super Retina XDR display, A16 Bionic chip, dual 48MP rear cameras, 6GB RAM, and storage options of 128GB, 256GB, or 512GB.",
+      "price": 941.93,
+      "category": "Apple",
+      "ratings": 4.4,
+      "productCreationDateTime": "2023-09-05T09:40:00Z"
+    },
+    {
+      "productName": "iPhone 15 Pro Max - 24KT Gold Edition",
+      "productImage": "https://i.ibb.co/pQMHh3j/image-1000x1200-23.png",
+      "description": "The iPhone 15 Pro Max - 24KT Gold Edition features a 6.7-inch display, A17 Pro chip, 8GB RAM, up to 1TB storage, and a 24KT gold finish.",
+      "price": 2121.46,
+      "category": "Apple",
+      "ratings": 4.3,
+      "productCreationDateTime": "2023-09-06T08:50:00Z"
+    },
+    {
+      "productName": "Redmi Note 13 Pro Plus 5G",
+      "productImage": "https://i.ibb.co/kgnnqRz/image-1000x1200-24.png",
+      "description": "The Redmi Note 13 Pro Plus 5G features a 6.67-inch AMOLED display, Dimensity 920 processor, triple 108MP rear cameras, 8GB RAM, and up to 256GB storage.",
+      "price": 318.22,
+      "category": "Redme",
+      "ratings": 4.5,
+      "productCreationDateTime": "2023-09-07T13:00:00Z"
+    },
+    {
+      "productName": "Redmi Note 13",
+      "productImage": "https://i.ibb.co/hBY2DZy/image-1000x1200-25.png",
+      "description": "The Redmi Note 13 features a 6.67-inch display, MediaTek Dimensity 700 processor, dual 50MP rear cameras, 6GB RAM, and up to 128GB storage.",
+      "price": 195.17,
+      "category": "Redme",
+      "ratings": 4.6,
+      "productCreationDateTime": "2023-09-08T11:10:00Z"
+    },
+    {
+      "productName": "16,499",
+      "productImage": "https://i.ibb.co/Cvz5kv0/image-1000x1200-26.png",
+      "description": "The Redmi Note 13, priced at 16,499 BDT, features a 6.67-inch display, MediaTek Dimensity 700 processor, dual 50MP rear cameras, 6GB RAM, and 128GB storage.",
+      "price": 140.01,
+      "category": "Redme",
+      "ratings": 3.9,
+      "productCreationDateTime": "2023-09-09T09:30:00Z"
+    },
+    {
+      "productName": "Redmi A3",
+      "productImage": "https://i.ibb.co/52tG2Fk/image-1000x1200-27.png",
+      "description": "The Redmi A3 features a 6.53-inch display, MediaTek Helio G25 processor, dual 13MP rear cameras, 3GB RAM, and 32GB storage.",
+      "price": 93.34,
+      "category": "Redme",
+      "ratings": 4.4,
+      "productCreationDateTime": "2023-09-10T08:20:00Z"
+    },
+    {
+      "productName": "Redmi 13C",
+      "productImage": "https://i.ibb.co/0B8grvf/image-1000x1200-28.png",
+      "description": "The Redmi 13C features a 6.71-inch display, MediaTek Helio G85 processor, dual 50MP rear cameras, 4GB RAM, and up to 128GB storage.",
+      "price": 118.79,
+      "category": "Redme",
+      "ratings": 4.1,
+      "productCreationDateTime": "2023-09-11T07:50:00Z"
+    },
+    {
+      "productName": "Redmi Note 12",
+      "productImage": "https://i.ibb.co/Ltc5VDk/image-1000x1200-29.png",
+      "description": "The Redmi Note 12 features a 6.67-inch AMOLED display, Snapdragon 678 processor, dual 48MP rear cameras, 4GB RAM, and up to 128GB storage.",
+      "price": 182.44,
+      "category": "Redme",
+      "ratings": 4.2,
+      "productCreationDateTime": "2023-09-12T12:10:00Z"
+    },
+    {
+      "productName": "Xiaomi 12 Pro",
+      "productImage": "https://i.ibb.co/V9mq2mp/image-1000x1200-30.png",
+      "description": "The Xiaomi 12 Pro features a 6.73-inch AMOLED display, Snapdragon 8 Gen 1 chip, triple 50MP rear cameras, 8GB RAM, and up to 256GB storage.",
+      "price": 848.58,
+      "category": "Redme",
+      "ratings": 4.3,
+      "productCreationDateTime": "2023-09-13T11:45:00Z"
+    },
+    {
+      "productName": "Google Pixel 9 Pro XL",
+      "productImage": "https://i.ibb.co/ChTCMLB/image-1000x1200-32.png",
+      "description": "The Google Pixel 9 Pro XL features a 6.8-inch OLED display, Google Tensor G3 chip, triple 50MP rear cameras, 12GB RAM, and up to 1TB storage.",
+      "price": 1103.16,
+      "category": "Pixel",
+      "ratings": 4.0,
+      "productCreationDateTime": "2023-09-14T10:20:00Z"
+    },
+    {
+      "productName": "Google Pixel 9",
+      "productImage": "https://i.ibb.co/hRdf25n/image-1000x1200-33.png",
+      "description": "The Google Pixel 9 features a 6.7-inch OLED display, Google Tensor G3 chip, dual 50MP rear cameras, 8GB RAM, and up to 512GB storage.",
+      "price": 806.15,
+      "category": "Pixel",
+      "ratings": 4.1,
+      "productCreationDateTime": "2023-09-15T08:30:00Z"
+    },
+    {
+      "productName": "Google Pixel 8a",
+      "productImage": "https://i.ibb.co/5RTNr1k/image-1000x1200-34.png",
+      "description": "Budget-friendly smartphone with MediaTek Helio G80, 6GB RAM, and 128GB storage.",
+      "price": 509.15,
+      "category": "Pixel",
+      "ratings": 4.0,
+      "productCreationDateTime": "2023-09-16T09:40:00Z"
+    },
+    {
+      "productName": "Google Pixel 7 Pro",
+      "productImage": "https://i.ibb.co/L6Z24JN/image-1000x1200-35.png",
+      "description": "The Google Pixel 7 Pro features a 6.7-inch LTPO OLED display, Google Tensor G2 chip, triple 50MP rear cameras, 12GB RAM, and up to 512GB storage.",
+      "price": 441.26,
+      "category": "Pixel",
+      "ratings": 4.5,
+      "productCreationDateTime": "2023-09-17T12:30:00Z"
+    },
+    {
+      "productName": "Google Pixel 4a 5G",
+      "productImage": "https://i.ibb.co/6H3Zhkd/image-1000x1200-2.png",
+      "description": "Google Pixel 4a 5G features a 6.7-inch LTPO OLED display, Google Tensor G2 chip, triple 50MP rear cameras, 12GB RAM, and up to 512GB storage.",
+      "price": 341.26,
+      "category": "Pixel",
+      "ratings": 4.5,
+      "productCreationDateTime": "2023-09-17T12:30:00Z"
+    }
+  ]
+  

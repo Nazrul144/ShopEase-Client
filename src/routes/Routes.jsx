@@ -7,13 +7,17 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Products from "../pages/Products";
+import ErrorPage from "../pages/ErrorPage";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import ViewDetails from "../pages/ViewDetails";
 
 
   export const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
-      errorElement: <h1>404 page not found!</h1>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: '/',
@@ -25,6 +29,12 @@ import Products from "../pages/Products";
           loader: ()=> fetch('http://localhost:5000/mobileCount')
         },
         {
+          path:'/viewDetails/:id',
+          element: <ViewDetails></ViewDetails>,
+          loader: ({params}) => fetch(`http://localhost:5000/mobiles/${params.id}`)
+        },
+       
+        {
             path: '/login',
             element: <Login></Login>
         },
@@ -32,6 +42,14 @@ import Products from "../pages/Products";
             path: '/register',
             element: <Register></Register>
         },
+        {
+          path: '/aboutus',
+          element: <About></About>
+        },
+        {
+          path: '/contact',
+          element: <Contact></Contact>
+        }
       ]
     },
   ]);

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MobileCard from './MobileCard';
 import {useLoaderData} from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Products = () => {
     const [data, setData] = useState([])
@@ -44,13 +45,14 @@ const Products = () => {
 
     return (
         <div>
-            <h1>All products here! </h1>
-            {/*For search query*/}
-            
-            {data.length}
+           <div>
+           <Helmet>
+                <title>ShopEase | Products</title>
+            </Helmet>
+           </div>
             <div className='grid grid-cols-4 gap-6'>
             {
-                data?.map(mobile => <MobileCard mobile={mobile}></MobileCard>)
+                data?.map(mobile => <MobileCard key={mobile._id} mobile={mobile}></MobileCard>)
             }
             </div>
             {/*Pagination*/}

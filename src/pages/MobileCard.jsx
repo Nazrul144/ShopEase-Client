@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MobileCard = ({mobile}) => {
-    const {productName, productImage, rating, price} = mobile;
+    const {productName, productImage, price, _id} = mobile;
+   
     return (
         <div>
             <div className="card bg-base-100 shadow-xl h-full">
@@ -15,7 +17,9 @@ const MobileCard = ({mobile}) => {
                     <h2 className="card-title">{productName}</h2>
                     <p>$ {price}</p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <Link to={`/viewDetails/${_id}`}>
+                        <button className="btn btn-primary">Details</button>
+                        </Link>
                     </div>
                 </div>
             </div>

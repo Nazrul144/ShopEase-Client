@@ -17,6 +17,8 @@ const Register = () => {
 
     //Showing password:
     const [showPassword, setShowPassword] = useState(false)
+    const [success, setSuccess] = useState('')
+    const [registerError, setRegisterError] = useState('');
 
     const auth = getAuth(app);
     const {createUser} = useContext(AuthContext)
@@ -41,6 +43,23 @@ const Register = () => {
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
+
+          //Clear the state:
+          setRegisterError('')
+          setSuccess('')
+  
+
+        
+          //Validation Check:
+          if(password.length < 6){
+            setRegisterError('Password should be at least 6 character or long!');
+            return;
+        }
+        if(!/[A-z]/.test(password)){
+            setRegisterError('Make a strong password with various character');
+            return ;
+        }
+
 
         createUser( email, password, username, photo)
         .then(result =>{
@@ -143,6 +162,16 @@ const Register = () => {
                     
                     <button className="block w-full text-center text-white text-lg dark:bg-violet-600 font-bold rounded-lg btn btn-secondary">Register</button>
                 </form>
+
+                {/*Showing Error and Success Message*/}
+                <div className="errorDiv">
+                        {
+                            registerError && <p className='text-white font-semibold text-xl'>{registerError}</p>
+                        }
+                        {
+                            success && <p className='text-green-500 font-semibold text-xl'>{success}</p>
+                        }
+                    </div>
                
                 <div className="flex items-center pt-4 space-x-1">
                     <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>

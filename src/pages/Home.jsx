@@ -28,7 +28,6 @@ const Home = () => {
                 <title>ShopEase | Home</title>
             </Helmet>
             </div>
-            <h1>This is home</h1>
      
       <div className='container  py-8 mx-auto mt-20 lg:mt-4 '>
         <Swiper

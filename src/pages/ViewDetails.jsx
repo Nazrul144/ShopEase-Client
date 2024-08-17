@@ -7,7 +7,7 @@ const ViewDetails = () => {
     return (
         <div>
             <Helmet>
-                <title>CraftedEcoChic | View Details</title>
+                <title>ShowEase | View Details</title>
             </Helmet>
             <section className="bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-gray-800">
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">

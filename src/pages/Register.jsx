@@ -12,6 +12,8 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { app } from '../firebase/firebase.config';
 import { AuthContext } from '../provider/AuthProvider';
 import loginImg from '../assets/banner/login.jpg';
+import { useLocation, useNavigate} from 'react-router-dom';
+
 
 const Register = () => {
 
@@ -19,6 +21,9 @@ const Register = () => {
     const [showPassword, setShowPassword] = useState(false)
     const [success, setSuccess] = useState('')
     const [registerError, setRegisterError] = useState('');
+
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const auth = getAuth(app);
     const {createUser} = useContext(AuthContext)
@@ -68,6 +73,8 @@ const Register = () => {
                 text: "You clicked the button!",
                 icon: "success"
               });
+              //Navigate after login:
+            navigate(location?.state ? location.state : '/')
         })
         .catch(error => error.message)
 

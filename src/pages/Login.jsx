@@ -10,6 +10,7 @@ import { HiMiniEyeSlash } from 'react-icons/hi2';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { app } from '../firebase/firebase.config';
 import { AuthContext } from '../provider/AuthProvider';
+import loginImg from '../assets/banner/login.jpg';
 
 const Login = () => {
     //Showing and hiding password:
@@ -69,13 +70,14 @@ const Login = () => {
             <Helmet>
                 <title>ShopEase | Login</title>
             </Helmet>
-            <div data-aos-easing="zoom-in-up" data-aos-duration='1000' className="loginDiv">
-                <div className="w-full max-w-md mb-20 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800 shadow-xl mx-auto mt-20 lg:8 justify-center items-center">
+            <div className='h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center' style={{ backgroundImage: `url(${loginImg})` }}>
+            <div data-aos-easing="zoom-in-up" data-aos-duration='1000' className="loginDiv w-full max-w-md border-[1px] border-[#7c1962] lg:p-8 rounded-xl dark:bg-gray-50 dark:text-gray-800 mx-auto shadow-xl text-white">
+                <div>
      
-                    <div className='text-center'>
+                <div className='text-center'>
                     <h1 style={{ margin: 'auto 0', fontWeight: 'normal' }}>
                     
-                        <span style={{ color: 'red', fontWeight: 'bold' , fontSize: '24px'}}>
+                        <span style={{ color: 'white', fontWeight: 'bold' , fontSize: '40px'}}>
                             <Typewriter
                                 words={['Login!']}
                                 loop={50}
@@ -91,14 +93,11 @@ const Login = () => {
                     </h1>
                 </div>
 
-
-
-
                     <form onSubmit={handleLogin}  noValidate="" action="" className="space-y-6 animate__animated animate__zoomIn">
                         <div className="space-y-1 text-sm">
                             <label htmlFor="username" className="block dark:text-gray-600">Email</label>
                             <div className='relative'>
-                                <input type="email" name="email" id="username" placeholder="Email" required className="w-full px-8 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 border-2 border-gray-800" />
+                                <input type="email" name="email" id="username" placeholder="Email" required className="w-full px-8 py-3 rounded-md dark:border-gray-300 bg-transparent dark:bg-gray-50 dark:text-gray-800 border-[1px] border-white" />
                                 <div className='absolute top-4 left-2'>
                                     <IoMail className='text-xl' />
                                 </div>
@@ -113,7 +112,7 @@ const Login = () => {
                                     id="password"
                                     required
                                     placeholder="Password"
-                                    className="w-full px-8 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 border-2 border-gray-800" />
+                                    className="w-full px-8 py-3 rounded-md dark:border-gray-300 bg-transparent dark:bg-gray-50 dark:text-gray-800 border-[1px] border-white" />
                                 <div className='absolute top-4 right-3'>
                                     <span>
 
@@ -133,7 +132,7 @@ const Login = () => {
                                 <a rel="noopener noreferrer" href="#">Forgot Password?</a>
                             </div>
                         </div>
-                        <button className="block w-full p-3 text-center dark:text-gray-50 bg-sky-400 font-bold rounded-lg">Log in</button>
+                        <button className="block w-full  text-center text-white text-lg dark:bg-violet-600 font-bold rounded-lg btn btn-secondary">Log in</button>
                     </form>
 
                     
@@ -155,6 +154,8 @@ const Login = () => {
                     </p>
                 </div>
             </div>
+            </div>
+            
           
         </div>
     );

@@ -11,6 +11,7 @@ import 'animate.css';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { app } from '../firebase/firebase.config';
 import { AuthContext } from '../provider/AuthProvider';
+import loginImg from '../assets/banner/login.jpg';
 
 const Register = () => {
 
@@ -66,7 +67,8 @@ const Register = () => {
            <Helmet>
                 <title>ShopEase | Register</title>
             </Helmet>
-            <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800 mt-44 mb-20 lg:mt-8 mx-auto shadow-xl">
+            <div className='h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center' style={{ backgroundImage: `url(${loginImg})` }}>
+                <div className='w-full max-w-md border-[1px] border-[#7c1962] lg:p-8 rounded-xl dark:bg-gray-50 dark:text-gray-800 mx-auto shadow-xl text-white'>
                 <div className='text-center'>
                     <h1 style={{ margin: 'auto 0', fontWeight: 'normal' }}>
                   
@@ -92,14 +94,14 @@ const Register = () => {
                     <div className="space-y-1 text-sm">
                         <label htmlFor="username" className="block dark:text-gray-600">Username</label>
                         <div className='relative'>
-                            <input type="text" name="username" placeholder="Username" required className="w-full px-8 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 border-2 border-gray-800" />
+                            <input type="text" name="username" placeholder="Username" required className="w-full px-8 py-3 rounded-md dark:border-gray-300 bg-transparent dark:bg-gray-50 dark:text-gray-800 border-[1px] border-white" />
                             <div className='absolute top-4 left-2'>
                                 <FaUserEdit className='text-xl' />
                             </div>
                         </div>
                         <label htmlFor="url" className="block dark:text-gray-600">Photo URL</label>
                         <div className='relative'>
-                            <input type="text" name="photo" placeholder="Photo URL" required className="w-full px-8 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 border-2 border-gray-800" />
+                            <input type="text" name="photo" placeholder="Photo URL" required className="w-full px-8 py-3 rounded-md dark:border-gray-300 bg-transparent dark:bg-gray-50 dark:text-gray-800 border-[1px] border-white" />
                             <div className='absolute top-4 left-2'>
                                 <FaImages className='text-xl' />
                             </div>
@@ -107,7 +109,7 @@ const Register = () => {
 
                         <label htmlFor="email" className="block dark:text-gray-600">Email</label>
                         <div className='relative'>
-                            <input type="email" name="email" placeholder="Email" required className="w-full px-8 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 border-2 border-gray-800" />
+                            <input type="email" name="email" placeholder="Email" required className="w-full px-8 py-3 rounded-md dark:border-gray-300 bg-transparent dark:bg-gray-50 dark:text-gray-800 border-[1px] border-white" />
                             <div className='absolute top-4 left-2'>
                                 <IoMail className='text-xl' />
                             </div>
@@ -123,7 +125,7 @@ const Register = () => {
                                 id="password"
                                 placeholder=" Choose Password"
                                 required
-                                className="w-full px-8 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 border-2 border-gray-800" />
+                                className="w-full px-8 py-3 rounded-md dark:border-gray-300 bg-transparent dark:bg-gray-50 dark:text-gray-800 border-[1px] border-white" />
                             <div className='absolute top-4 right-3'>
 
 
@@ -139,7 +141,7 @@ const Register = () => {
 
                     </div>
                     
-                    <button className="block w-full p-3 text-center dark:text-gray-50 dark:bg-violet-600 font-bold rounded-lg btn btn-secondary">Register</button>
+                    <button className="block w-full text-center text-white text-lg dark:bg-violet-600 font-bold rounded-lg btn btn-secondary">Register</button>
                 </form>
                
                 <div className="flex items-center pt-4 space-x-1">
@@ -158,6 +160,7 @@ const Register = () => {
                 <p className="text-xl text-center sm:px-6 dark:text-gray-600">Already have an account?
                     <Link to='/login' rel="noopener noreferrer" href="#" className="underline dark:text-gray-800 font-bold text-blue-600"> Login</Link>
                 </p>
+                </div>
             </div>
         </div>
     );

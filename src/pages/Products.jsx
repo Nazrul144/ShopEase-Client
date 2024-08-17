@@ -15,19 +15,29 @@ const Products = () => {
     //Search state
     const [search, setSearch] = useState('')
 
+    // States for new filters
+    const [category, setCategory] = useState(''); // Category filter
+    const [minPrice, setMinPrice] = useState(''); // Minimum price filter
+    const [maxPrice, setMaxPrice] = useState(''); // Maximum price filter
+
+    console.log(category);
+
+    // fetch(`http://localhost:5000/mobiles?page=${currentPage}&size=${productPerPage}&sort=${asc ? 'asc' : 'desc'}&search=${search}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
+
+
+
     const { count } = useLoaderData();
-    
     // Pagination logic
     const numberOfPages = Math.ceil(count / productPerPage);
     const pages = [...Array(numberOfPages).keys()];
    
     useEffect(() => {
-        fetch(`http://localhost:5000/mobiles?page=${currentPage}&size=${productPerPage}&sort=${asc ? 'asc' : 'desc'}&search=${search}`)
+        fetch(`http://localhost:5000/mobiles?page=${currentPage}&size=${productPerPage}&sort=${asc ? 'asc' : 'desc'}&search=${search}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
         .then(res => res.json())
         .then(data => {
             setData(data);
         })
-    }, [currentPage, productPerPage, asc, search]);
+    }, [currentPage, productPerPage, asc, search, category, minPrice, maxPrice]);
 
     // Handle Product per page:
     const handleProductPerPage = (e) => {
@@ -57,6 +67,22 @@ const Products = () => {
         setSearch(searchText)
         
     }
+
+    // Handle brand filter change
+    const handleBrandChange = (e) => {
+        setCategory(e.target.value);
+    }
+
+    //Handle Price Range:
+     // Handle minimum price filter change
+     const handleMinPriceChange = (e) => {
+        setMinPrice(e.target.value);
+    }
+
+    // Handle maximum price filter change
+    const handleMaxPriceChange = (e) => {
+        setMaxPrice(e.target.value);
+    }
     
     return (
         <div>
@@ -67,20 +93,52 @@ const Products = () => {
             </div>
             {/*All Functionality div*/}
 
-            <div className='flex justify-between'>
-                       {/*Searching Product*/}
+            <div className='lg:flex justify-around mt-12 mb-24'>
+            {/*Searching Product*/}
             <div className='relative'>
                 <form onSubmit={handleSearch}>
-                    <input className='p-2 px-12 w-96 border-2 border-gray-100 rounded-lg' placeholder='Search Product' type="text" name='search' />
+                    <input className='p-2 px-12 lg:w-96 border-2 border-gray-100 rounded-lg' placeholder='Search Product' type="text" name='search' />
                     <IoSearchOutline className='absolute top-3 ml-4 text-2xl' />
                     <input type="submit" value="Search" className='btn bg-orange-500'/>
                 </form>
             </div>
 
+            {/*Filtering by category*/}
+
+            <select  value={category} onChange={handleBrandChange} className='p-2 px-4 font-bold border-2 bg-purple-400 border-gray-100 rounded-lg'>
+                        <option value="">Select Brand</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Oppo">Oppo</option>
+                        <option value="Nokia">Nokia</option>
+                        <option value="Redmi">Redmi</option>
+                       
+            </select>
+        
+             {/* Filtering by price range */}
+             <div className='relative mt-4 lg:mt-0'>
+                    <input
+                        type="number"
+                        value={minPrice}
+                        onChange={handleMinPriceChange}
+                        placeholder="Min Price"
+                        className='p-2 px-4 border-2 border-gray-100 rounded-lg'
+                    />
+                    <input
+                        type="number"
+                        value={maxPrice}
+                        onChange={handleMaxPriceChange}
+                        placeholder="Max Price"
+                        className='p-2 px-4 border-2 border-gray-100 rounded-lg'
+                    />
+                </div>
+                
+           
+
             {/* Price Sorting */}
-            <div className='flex justify-center'>
+            <div className='lg:flex justify-center mt-4 lg:mt-0'>
                 <button onClick={() => setAsc(!asc)}
-                    className='px-8 py-3 text-lg font-semibold border rounded border-gray-100 dark:border-gray-800 hover:bg-[orange] bg-orange-100 duration-1000 ease-in-out hover:text-black border-none'>
+                    className='px-8 py-3 text-lg font-semibold border rounded bg-sky-400 dark:border-gray-800 hover:bg-[orange duration-1000 ease-in-out hover:text-black border-none'>
                     {asc ? 'PRICE: HIGH TO LOW' : 'PRICE: LOW TO HIGH'}
                 </button>
             </div>
@@ -88,7 +146,7 @@ const Products = () => {
 
             </div>
      
-            <div className='grid grid-cols-4 gap-6'>
+            <div className='grid lg:grid-cols-4 gap-6'>
                 {
                     data?.map(mobile => <MobileCard key={mobile._id} mobile={mobile}></MobileCard>)
                 }

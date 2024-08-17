@@ -12,7 +12,7 @@ import AuthProvider from './provider/AuthProvider';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='w-11/12 mx-auto'>
+    <div className='w-11/12 mx-auto bg-base-100'>
     <HelmetProvider>
       <AuthProvider>
       <RouterProvider router={router} />

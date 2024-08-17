@@ -31,7 +31,7 @@ const Home = () => {
      
       <div className='container  py-8 mx-auto mt-20 lg:mt-4 '>
         <Swiper
-          spaceBetween={30}
+          spaceBetween={0}
           centeredSlides={true}
           autoplay={{
             delay: 2500,

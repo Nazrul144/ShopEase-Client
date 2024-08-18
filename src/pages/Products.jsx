@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import MobileCard from './MobileCard';
 import { useLoaderData } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { FaSearch } from 'react-icons/fa';
 import { IoSearchOutline } from 'react-icons/io5';
 
 const Products = () => {
@@ -17,12 +16,10 @@ const Products = () => {
 
     // States for new filters
     const [category, setCategory] = useState(''); // Category filter
+    const [brand, setBrand] = useState('');       // Brand filter
     const [minPrice, setMinPrice] = useState(''); // Minimum price filter
     const [maxPrice, setMaxPrice] = useState(''); // Maximum price filter
 
-    console.log(category);
-
-    // fetch(`http://localhost:5000/mobiles?page=${currentPage}&size=${productPerPage}&sort=${asc ? 'asc' : 'desc'}&search=${search}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
 
 
 
@@ -32,12 +29,12 @@ const Products = () => {
     const pages = [...Array(numberOfPages).keys()];
    
     useEffect(() => {
-        fetch(`http://localhost:5000/mobiles?page=${currentPage}&size=${productPerPage}&sort=${asc ? 'asc' : 'desc'}&search=${search}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
+        fetch(`https://shop-ease-server-mu.vercel.app/mobiles?page=${currentPage}&size=${productPerPage}&sort=${asc ? 'asc' : 'desc'}&search=${search}&category=${category}&brand=${brand}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
         .then(res => res.json())
         .then(data => {
             setData(data);
         })
-    }, [currentPage, productPerPage, asc, search, category, minPrice, maxPrice]);
+    }, [currentPage, productPerPage, asc, search, category, brand, minPrice, maxPrice]);
 
     // Handle Product per page:
     const handleProductPerPage = (e) => {
@@ -68,10 +65,19 @@ const Products = () => {
         
     }
 
-    // Handle brand filter change
-    const handleBrandChange = (e) => {
+    // Handle Category filter
+    const handleCategoryChange = (e) => {
         setCategory(e.target.value);
     }
+
+      // Handle Brand filter 
+      const handleBrandChange = (e) => {
+        setBrand(e.target.value); 
+        
+    }
+
+    
+    
 
     //Handle Price Range:
      // Handle minimum price filter change
@@ -105,15 +111,34 @@ const Products = () => {
 
             {/*Filtering by category*/}
 
-            <select  value={category} onChange={handleBrandChange} className='p-2 px-4 font-bold border-2 bg-purple-400 border-gray-100 rounded-lg'>
-                        <option value="">Select Brand</option>
-                        <option value="Apple">Apple</option>
-                        <option value="Samsung">Samsung</option>
-                        <option value="Oppo">Oppo</option>
-                        <option value="Nokia">Nokia</option>
-                        <option value="Redmi">Redmi</option>
+            <select  value={category} onChange={handleCategoryChange} className='p-2 px-4 font-bold border-2 bg-purple-400 border-gray-100 rounded-lg'>
+                        <option value="">Category</option>
+                        <option value="Mobile">Mobile Phone</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Camera">Camera</option>
+                        <option value="TV">TV</option>
+                        <option value="Headphone">Headphone</option>
+                        <option value="Watch">Watch</option>
                        
             </select>
+
+             {/* Filtering by Brand */}
+             <select value={brand} onChange={handleBrandChange} className='p-2 px-4 font-bold border-2 bg-purple-400 border-gray-100 rounded-lg mt-4 lg:mt-0'>
+                    <option value="">Select Brand</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Nokia">Nokia</option>
+                    <option value="Oppo">Oppo</option>
+                    <option value="Redmi">Redmi</option> 
+                    <option value="Olevs">Olevs</option>
+                    <option value="Rolex">Rolex</option> 
+                    <option value="Dell">Dell</option>
+                    <option value="Hp">HP</option>
+                    <option value="Walton">Walton</option>
+                    <option value="Sony">Sony</option>
+                    <option value="Canon">Canon</option>
+                </select>
+              
         
              {/* Filtering by price range */}
              <div className='relative mt-4 lg:mt-0'>
@@ -138,7 +163,7 @@ const Products = () => {
             {/* Price Sorting */}
             <div className='lg:flex justify-center mt-4 lg:mt-0'>
                 <button onClick={() => setAsc(!asc)}
-                    className='px-8 py-3 text-lg font-semibold border rounded bg-sky-400 dark:border-gray-800 hover:bg-[orange duration-1000 ease-in-out hover:text-black border-none'>
+                    className='px-8 py-3 text-lg font-semibold border rounded bg-sky-400 dark:border-gray-800 hover:bg-[orange] duration-1000 ease-in-out hover:text-black border-none'>
                     {asc ? 'PRICE: HIGH TO LOW' : 'PRICE: LOW TO HIGH'}
                 </button>
             </div>
@@ -168,11 +193,16 @@ const Products = () => {
                 }
                 <button onClick={handleNextPage} className='btn bg-orange-500'>Next</button>
                 <select value={productPerPage} onChange={handleProductPerPage}>
-                    <option value="8">8</option>
-                    <option value="16">16</option>
-                    <option value="24">24</option>
-                    <option value="32">32</option>
-                    <option value="40">40</option>
+                    <option className='font-bold' value="8">8</option>
+                    <option className='font-bold' value="16">16</option>
+                    <option className='font-bold' value="24">24</option>
+                    <option className='font-bold' value="32">32</option>
+                    <option className='font-bold' value="40">40</option>
+                    <option className='font-bold' value="48">48</option>
+                    <option className='font-bold' value="56">56</option>
+                    <option className='font-bold' value="64">64</option>
+                    <option className='font-bold' value="72">72</option>
+                    <option className='font-bold' value="80">All</option>
                 </select>
             </div>
         </div>

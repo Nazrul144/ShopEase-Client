@@ -19,7 +19,7 @@ const Login = () => {
     const {login} = useContext(AuthContext)
     const location = useLocation()
     const navigate = useNavigate()
-    console.log(location);
+ 
     //Google login:
     const auth = getAuth(app);
     const googleProvider = new GoogleAuthProvider();

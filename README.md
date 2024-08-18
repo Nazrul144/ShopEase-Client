@@ -27,7 +27,7 @@ ShopEase is a comprehensive e-commerce platform designed to simplify online shop
 
 Create a .env file in the root directory and add the necessary environment variables:
 
-- REACT_APP_API_URL=http://localhost:5000/api
+- REACT_APP_API_URL=https://shop-ease-server-mu.vercel.app/api
 - REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
 
 - **npm run dev**

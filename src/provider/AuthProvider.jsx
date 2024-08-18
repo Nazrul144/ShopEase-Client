@@ -15,7 +15,7 @@ const AuthProvider = ({children}) => {
     const auth = getAuth(app);
 
     const createUser = ( email, password, username, photo) =>{
-        console.log("login from 17", email, password, username, photo);
+        
         setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -28,7 +28,6 @@ const AuthProvider = ({children}) => {
             });
         })
         .then(() => {
-            console.log('Profile Updated!');
             setLoading(false); 
         })
         .catch((error) => {

@@ -27,12 +27,12 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
         {
           path: '/products',
           element: <Products></Products>,
-          loader: ()=> fetch('http://localhost:5000/mobileCount')
+          loader: ()=> fetch('https://shop-ease-server-mu.vercel.app/mobileCount')
         },
         {
           path:'/viewDetails/:id',
           element:  <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/mobiles/${params.id}`)
+          loader: ({params}) => fetch(`https://shop-ease-server-mu.vercel.app/mobiles/${params.id}`)
         },
        
         {

@@ -29,7 +29,7 @@ const Navbar = () => {
 
         //Handle theme:
         const handleTheme = e => {
-            console.log(e.target.value);
+           
             if (e.target.checked) {
                 setTheme('dark')
             } else {
@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div style={{ background: 'linear-gradient(90deg, #ff7e5f, #feb47b)' }} className="navbar bg-base-100 shadow-lg ">
+            <div style={{ background: 'linear-gradient(90deg, #ff7e5f, #feb47b)' }} className="navbar bg-base-100 shadow-lg">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
